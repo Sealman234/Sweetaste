@@ -5,5 +5,3 @@
     - CSS Grid 排版
 - Sass (SCSS)
 - Material icons
-- JavaScript
-- Git
