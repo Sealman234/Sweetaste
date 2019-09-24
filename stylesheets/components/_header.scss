@@ -1,0 +1,70 @@
+// 毛玻璃效果
+.header .frosted-wrap {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; // 覆蓋大圖
+    height: 256px;
+    position: relative;
+    overflow: hidden;
+
+    // 綠色毛玻璃 (偽元素)
+    &::after {
+        content: '';
+        position: absolute;
+        // top: 0px;
+        // left: 0px;
+        // right: 0px;
+        // bottom: 0px;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        background-color: rgba(63, 93, 69, 0.8);
+        transition: background-color .5s;
+        z-index: -1; // 因為文字的 z-index 是 0
+    }
+
+    // 當 active, hover, focus 時 background-color 變黃色
+    &.active::after,
+    &:hover::after,
+    &:focus::after {
+        background-color: rgba(255, 225, 128, 0.8);
+    }
+
+    .frosted-text {
+        writing-mode: vertical-lr; // Text Layout
+        font-size: 24px;
+        letter-spacing: 10px;
+        color: #fff;
+    }
+
+    // 當 active, hover, focus 時 .frosted-text 變黃色
+    &.active .frosted-text,
+    &:hover .frosted-text,
+    &:focus .frosted-text {
+        color: #3F5D45;
+        font-weight: bolder;
+    }
+
+    // 背景圖
+    .frosted-image {
+        position: absolute;
+        right: -10px;
+        left: -10px;
+        top: -10px;
+        bottom: -10px;
+        z-index: -2; // 最下面
+        // 背景圖變模糊
+        filter: blur(5px);
+        transition: filter .5s;
+    }
+
+    &.active .frosted-image,
+    &:hover .frosted-image,
+    &:focus .frosted-image {
+        filter: blur(0);
+    }
+
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweetaste - 購物車</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Bootstrap, SASS, SCSS, Sweetaste,甜點電商, hexschool, 六角學院,">
+    <meta property="description" content="六角學院 Bootstrap 課程最終作業，使用 Bootstrap 結合 SCSS 製作完成">
+    <!-- Facebook -->
+    <meta property="og:title" content="Sweetaste 六角甜點工坊">
+    <meta property="og:description" content="六角學院 Bootstrap 課程最終作業">
+    <meta property="og:locale" content="zh_tw">
+    <meta property="og:type" content="website">
+    <!-- logo -->
+    <link rel="icon" href="./images/favicon_48.ico">
+    <!-- Font Awesome 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./stylesheets/all.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <div class="container">
+            <!-- menu toggle button -->
+            <button class="navbar-toggler d-flex align-items-center border-0 d-md-none" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="material-icons">menu</i>
+            </button>
+            <!-- brand logo -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo-all-dark.svg" width="220" height="40" class="d-none d-md-inline-block">
+                <img src="./images/logotype-sm-dark.svg" width="114" height="18" class="d-inline-block d-md-none">
+            </a>
+            <!-- cart link -->
+            <a class="nav-link d-flex align-items-center order-md-1" style="font-size: 24px;" href="./cart.html">
+                <i class="material-icons">shopping_cart</i>
+                <span class="sr-only">(current)</span>
+            </a>
+            <!-- dropdown menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- 靠右 -->
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="container my-md-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="h4 bg-primary-lighter text-center py-4 text-primary mb-0">您的購物車</h1>
+                <!-- Items 1 -->
+                <div class="py-3 d-flex flex-column flex-md-row">
+                    <!-- 圖與 form 水平排列 -->
+                    <div class="d-flex flex-md-grow-1 mr-md-3">
+                        <!-- to grow to fill available space -->
+                        <div class="bg-cover my-4 mr-4 flex-grow-1 flex-md-grow-0"
+                            style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80); height: 110px; min-width: 110px;">
+                        </div>
+                        <!-- 外層 flex-md-grow-1 + Button ml-auto -->
+                        <div class="cart-form d-flex flex-column flex-md-row align-items-md-center 
+                        justify-content-center flex-md-grow-1">
+                            <!-- Price -->
+                            <div class="mr-md-4 text-primary">
+                                <span class="h5">抹茶馬卡龍</span>
+                                <br>
+                                <span>NT$ 450</span>
+                            </div>
+                            <!-- Button -->
+                            <div class="input-group ml-md-auto mt-3 mt-md-0" style="width: 145px;">
+                                <div class="input-group-prepend">
+                                    <button class="btn custom-social-btn material-icons text-primary-light"
+                                        type="button">remove</button>
+                                </div>
+                                <input type="text" class="form-control" value="2">
+                                <div class="input-group-append">
+                                    <button
+                                        class="btn custom-social-btn material-icons text-primary-light custom-font-size"
+                                        type="button">add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price -->
+                    <div
+                        class="text-primary d-flex align-items-center cart-price-border justify-content-end justify-content-md-start py-3">
+                        <span class="h5 mr-md-3 mb-0">NT$ 900</span>
+                        <a href="#" class="btn d-none d-md-block">
+                            <span class="material-icons text-primary">delete_outline</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Items 2 -->
+                <div class="py-3 d-flex flex-column flex-md-row cart-border">
+                    <!-- 圖與 form 水平排列 -->
+                    <div class="d-flex flex-md-grow-1 mr-md-3">
+                        <!-- to grow to fill available space -->
+                        <div class="bg-cover my-4 mr-4 flex-grow-1 flex-md-grow-0"
+                            style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80); height: 110px; min-width: 110px;">
+                        </div>
+                        <!-- 外層 flex-md-grow-1 + Button ml-auto -->
+                        <div class="cart-form d-flex flex-column flex-md-row align-items-md-center 
+                            justify-content-center flex-md-grow-1">
+                            <!-- Price -->
+                            <div class="mr-md-4 text-primary">
+                                <span class="h5">抹茶馬卡龍</span>
+                                <br>
+                                <span>NT$ 450</span>
+                            </div>
+                            <!-- Button -->
+                            <div class="input-group ml-md-auto mt-3 mt-md-0" style="width: 145px;">
+                                <div class="input-group-prepend">
+                                    <button class="btn custom-social-btn material-icons text-primary-light"
+                                        type="button">remove</button>
+                                </div>
+                                <input type="text" class="form-control" value="2">
+                                <div class="input-group-append">
+                                    <button
+                                        class="btn custom-social-btn material-icons text-primary-light custom-font-size"
+                                        type="button">add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price -->
+                    <div
+                        class="text-primary d-flex align-items-center cart-price-border justify-content-end justify-content-md-start py-3">
+                        <span class="h5 mr-md-3 mb-0">NT$ 900</span>
+                        <a href="#" class="btn d-none d-md-block">
+                            <span class="material-icons text-primary">delete_outline</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <!-- 訂單摘要 -->
+                <div class="text-primary bg-md-primary text-md-white py-3 p-md-3 p-md-3">
+                    <h1 class="h4 text-center py-3 bg-primary-lighter bg-md-primary">訂單摘要</h1>
+                    <hr class="border-white mt-0">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>小計</span>
+                        <span>NT$ 2,700</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>運費</span>
+                        <span>NT$ 300</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="h5">總計</span>
+                        <span class="h5">NT$ 3000</span>
+                    </div>
+                </div>
+                <!-- 結帳按鈕 -->
+                <div class="cart-button">
+                    <a href="./checkout-1.html" class="btn btn-block btn-accent btn-lg text-primary mx-md-0 py-3">結帳</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 訂閱郵件 -->
+    <section class="py-5 bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- 上半 -->
+                <div
+                    class="col-md-5 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
+                    <img src="./images/logo-light.svg" width="40" height="40">
+                    <span class="h4 text-white mb-0 mx-3">訂閱你我的甜蜜郵件</span>
+                </div>
+                <!-- 下半 -->
+                <div class="col-md-5">
+                    <div class="custom-form d-flex">
+                        <label for="subscription" class="material-icons custom-form-icon text-primary">
+                            email
+                        </label>
+                        <input type="email" id="subscription" class="custom-form-input">
+                        <button class="btn btn-accent btn-lg d-flex align-items-center" style="padding: 1rem 1rem;">
+                            <i class="material-icons">
+                                arrow_forward
+                            </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-primary-lighter">
+        <div class="container">
+            <!-- 上半 -->
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex flex-column justify-content-between">
+                    <!-- 要用 div 包住不然圖片寬度會跑掉 -->
+                    <div>
+                        <img src="./images/logotype-sm-dark.svg" height="27">
+                    </div>
+                    <ul class="list-unstyled mt-5 text-primary">
+                        <li>07-1234-5678</li>
+                        <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a></li>
+                        <li>800 高雄市新興區幸福路 520 號</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 d-none d-md-block text-right">
+                    <img src="./images/sm-今天是個吃甜點的好日子.svg" width="60">
+                </div>
+            </div>
+            <!-- 下半 -->
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-5 mt-2">
+                    <img src="./images/ic-line@.svg" height="32" width="32">
+                    <img src="./images/ic-facebook.svg" height="32" width="32">
+                </div>
+                <div class="col-md-5 text-md-right mt-2">
+                    <span class="text-primary">© 2019 Sweetaste* All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- Custom JS -->
+    <script src="./js/all.js"></script>
+</body>
+
+</html>

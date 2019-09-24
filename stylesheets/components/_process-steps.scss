@@ -1,0 +1,68 @@
+.process-steps {
+    position: relative;
+
+    // 細細的橫線
+    &::after {
+        content: " ";
+        display: block;
+        height: 1px;
+        background-color: #8DA291;
+        position: absolute;
+        top: 50%;
+        // 左右稱滿線條
+        left: 0;
+        right: 0;
+    }
+
+    // 三個空圈圈
+    .process-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #8DA291;
+        z-index: 1; // 在線之上
+        background-color: #3F5D45;
+        // 用 flex 置中圖示
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // 當前頁面 (雙層白色圈圈)
+    .active {
+        border-color: #EAF0ED; // 改顏色 讓當前頁面多一圈 border
+
+        &::after {
+            content: " ";
+            display: block;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            background-color: #EAF0ED;
+        }
+    }
+
+    // 已完成頁面 (塗滿白底加上綠色勾勾)
+    .completed {
+        font-size: 1rem;
+        background-color: #EAF0ED;
+        color: #3F5D45;
+    }
+}
+
+// 付款成功頁面的調整
+.process-steps-end {
+
+    // 細線
+    &::after {
+        background-color: #3F5D45;
+    }
+
+    // 付款成功 (綠底白勾)
+    .checkout-success {
+        font-size: 1rem;
+        background-color: #3F5D45;
+        color: #EAF0ED;
+        border-color: #3F5D45;
+    }
+}

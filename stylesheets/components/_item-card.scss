@@ -1,0 +1,57 @@
+.item-card {
+    .item-image {
+        height: 315px;
+        position: relative;
+
+        .item-tag {
+            writing-mode: vertical-lr;
+            padding: 15px 10px;
+            color: white;
+            letter-spacing: 5px;
+            line-height: 1.5;
+            // position
+            position: absolute;
+            left: 20px;
+            top: 0;
+            background-color: #3F5D45;
+        }
+
+        .item-icon {
+            position: absolute;
+            top: 20px;
+            right: 22px;
+            cursor: pointer;
+        }
+    }
+
+    .item-info {
+        border: 1px solid #EAF0ED;
+        font-size: 1.25rem;
+        text-align: center;
+
+        .item-name,
+        .item-price {
+            padding: 15px;
+        }
+
+        .item-name {
+            border-right: 1px solid #EAF0ED;
+        }
+    }
+
+    .item-cart {
+        padding: 1rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: 0;
+        // color
+        color: #212529;
+        background-color: #EAF0ED;
+        border-color: #EAF0ED;
+
+        &:hover {
+            background-color: #d4e0da;
+            border-color: #ccdbd4
+        }
+    }
+}

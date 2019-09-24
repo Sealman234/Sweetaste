@@ -1,0 +1,33 @@
+.cart-form {
+    .btn {
+        padding: 11px 15px;
+    }
+
+    input {
+        padding: 15px 5px;
+        height: 48px;
+        text-align: center;
+    }
+}
+
+.cart-border {
+    @media(min-width: 768px) {
+        border-top: solid 1px #EAF0ED;
+    }
+}
+
+.cart-price-border {
+    border-top: solid 1px #EAF0ED;
+    border-bottom: solid 1px #EAF0ED;
+
+    @media(min-width: 991.98px) {
+        border: 0;
+    }
+}
+
+.cart-button{
+    margin: 0px -15px;
+    @media(min-width: 768px) {
+        margin: 0px 0px;
+    }
+}

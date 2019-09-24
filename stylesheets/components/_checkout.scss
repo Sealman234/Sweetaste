@@ -1,0 +1,25 @@
+.checkout {
+
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    input::placeholder {
+        color: #8DA291;
+        opacity: 1;
+    }
+
+    .invoice-border {
+        border: #EAF0ED 1px solid;
+    }
+
+    .invoice-block {
+        font-size: 24px;
+        padding: 11px 0px;
+        margin-bottom: 8px;
+    }
+
+    .m-invoice-no-hover:hover{
+        color: #EAF0ED !important;
+    }
+    .e-invoice-no-hover:hover{
+        color: #3F5D45 !important;
+    }
+}
