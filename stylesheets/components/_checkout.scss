@@ -1,13 +1,15 @@
+@import './custom-color';
+
 .checkout {
 
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     input::placeholder {
-        color: #8DA291;
+        color: $lightPrimary;
         opacity: 1;
     }
 
     .invoice-border {
-        border: #EAF0ED 1px solid;
+        border: $lightGrey 1px solid;
     }
 
     .invoice-block {
@@ -17,9 +19,9 @@
     }
 
     .m-invoice-no-hover:hover{
-        color: #EAF0ED !important;
+        color: $lightGrey !important;
     }
     .e-invoice-no-hover:hover{
-        color: #3F5D45 !important;
+        color: $horsetailGreen !important;
     }
 }

@@ -1,3 +1,5 @@
+@import './custom-color';
+
 .cart-form {
     .btn {
         padding: 11px 15px;
@@ -12,13 +14,13 @@
 
 .cart-border {
     @media(min-width: 768px) {
-        border-top: solid 1px #EAF0ED;
+        border-top: solid 1px $lightGrey;
     }
 }
 
 .cart-price-border {
-    border-top: solid 1px #EAF0ED;
-    border-bottom: solid 1px #EAF0ED;
+    border-top: solid 1px $lightGrey;
+    border-bottom: solid 1px $lightGrey;
 
     @media(min-width: 991.98px) {
         border: 0;

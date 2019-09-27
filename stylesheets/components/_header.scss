@@ -1,3 +1,5 @@
+@import './custom-color';
+
 // 毛玻璃效果
 .header .frosted-wrap {
     text-decoration: none;
@@ -44,7 +46,7 @@
     &.active .frosted-text,
     &:hover .frosted-text,
     &:focus .frosted-text {
-        color: #3F5D45;
+        color: $horsetailGreen;
         font-weight: bolder;
     }
 

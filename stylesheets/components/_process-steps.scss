@@ -1,3 +1,5 @@
+@import './custom-color';
+
 .process-steps {
     position: relative;
 
@@ -6,7 +8,7 @@
         content: " ";
         display: block;
         height: 1px;
-        background-color: #8DA291;
+        background-color: $lightPrimary;
         position: absolute;
         top: 50%;
         // 左右稱滿線條
@@ -19,9 +21,9 @@
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        border: 1px solid #8DA291;
+        border: 1px solid $lightPrimary;
         z-index: 1; // 在線之上
-        background-color: #3F5D45;
+        background-color: $horsetailGreen;
         // 用 flex 置中圖示
         display: flex;
         justify-content: center;
@@ -30,7 +32,7 @@
 
     // 當前頁面 (雙層白色圈圈)
     .active {
-        border-color: #EAF0ED; // 改顏色 讓當前頁面多一圈 border
+        border-color: $lightGrey; // 改顏色 讓當前頁面多一圈 border
 
         &::after {
             content: " ";
@@ -38,15 +40,15 @@
             height: 14px;
             width: 14px;
             border-radius: 50%;
-            background-color: #EAF0ED;
+            background-color: $lightGrey;
         }
     }
 
     // 已完成頁面 (塗滿白底加上綠色勾勾)
     .completed {
         font-size: 1rem;
-        background-color: #EAF0ED;
-        color: #3F5D45;
+        background-color: $lightGrey;
+        color: $horsetailGreen;
     }
 }
 
@@ -55,14 +57,14 @@
 
     // 細線
     &::after {
-        background-color: #3F5D45;
+        background-color: $horsetailGreen;
     }
 
     // 付款成功 (綠底白勾)
     .checkout-success {
         font-size: 1rem;
-        background-color: #3F5D45;
-        color: #EAF0ED;
-        border-color: #3F5D45;
+        background-color: $horsetailGreen;
+        color: $lightGrey;
+        border-color: $horsetailGreen;
     }
 }

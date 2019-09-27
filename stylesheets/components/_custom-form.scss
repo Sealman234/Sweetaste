@@ -1,5 +1,7 @@
+@import './custom-color';
+
 .custom-form {
-    background-color: #EAF0ED;
+    background-color: $lightGrey;
     position: relative;
     padding-left: 60px;
 

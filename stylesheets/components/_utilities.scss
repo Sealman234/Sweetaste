@@ -1,3 +1,5 @@
+@import './custom-color';
+
 // background
 .bg-cover {
     background-size: cover;
@@ -13,24 +15,24 @@
 
 // bg color, text color
 .bg-primary-lighter {
-    background-color: #EAF0ED;
+    background-color: $lightGrey;
 }
 
 .text-primary-lighter {
-    color: #EAF0ED;
+    color: $lightGrey;
 }
 
 .border-primary-lighter {
-    border-color: #EAF0ED;
+    border-color: $lightGrey;
 }
 
 .text-primary-light {
-    color: #8DA291;
+    color: $lightPrimary;
 }
 
 .bg-md-primary {
     @media(min-width: 768px) {
-        background-color: #3F5D45;
+        background-color: $horsetailGreen;
     }
 }
 
@@ -44,24 +46,24 @@
 
 // 產品選單
 .list-group-item {
-    border: 1px solid #EAF0ED;
+    border: 1px solid $lightGrey;
     padding-top: 16px;
     padding-bottom: 16px;
 
     &:hover {
-        background-color: #EAF0ED;
+        background-color: $lightGrey;
     }
 
     &.active {
-        background-color: #EAF0ED;
-        border: 1px solid #EAF0ED;
+        background-color: $lightGrey;
+        border: 1px solid $lightGrey;
     }
 }
 
 // Custom Social Button
 .custom-social-btn {
     background-color: #fff;
-    border-color: #EAF0ED;
+    border-color: $lightGrey;
 
     &:hover {
         background-color: #e6e6e6;
